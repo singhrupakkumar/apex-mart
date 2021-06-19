@@ -1,36 +1,42 @@
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import React, { useEffect } from 'react';
+import SiteFeatures from '~/components/partials/homepage/home-default/SiteFeatures';
+import HomeAdsColumns from '~/components/partials/homepage/home-default/HomeAdsColumns';
+import HomeAds from '~/components/partials/homepage/home-default/HomeAds';
+import DownLoadApp from '~/components/partials/commons/DownLoadApp';
+import NewArrivals from '~/components/partials/homepage/home-default/NewArrivals';
+import Newletters from '~/components/partials/commons/Newletters';
+import HomeDefaultDealOfDay from '~/components/partials/homepage/home-default/HomeDefaultDealOfDay';
+import HomeDefaultTopCategories from '~/components/partials/homepage/home-default/HomeDefaultTopCategories';
+import ContainerHomeDefault from '~/components/layouts/ContainerHomeDefault';
+import HomeDefaultProductListing from '~/components/partials/homepage/home-default/HomeDefaultProductListing';
+import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          My Next.js Amplify app 
-        </h1>
-      </main>
-    </div>
-  )
-}
+const HomepageDefaultPage = () => {
+    return (
+        <ContainerHomeDefault title="Multipurpose Marketplace React Ecommerce Template">
+            <HomeDefaultBanner />
+            <SiteFeatures />
+            <HomeDefaultDealOfDay collectionSlug="deal-of-the-day" />
+            <HomeAdsColumns />
+            <HomeDefaultTopCategories />
+            <HomeDefaultProductListing
+                collectionSlug="consumer-electronics"
+                title="Consumer Electronics"
+            />
+            <HomeDefaultProductListing
+                collectionSlug="clothings"
+                title="Clothings"
+            />
+            <HomeDefaultProductListing
+                collectionSlug="garden-and-kitchen"
+                title="Garden & Kitchen"
+            />
+            <HomeAds />
+            <DownLoadApp />
+            <NewArrivals collectionSlug="new-arrivals-products" />
+            <Newletters />
+        </ContainerHomeDefault>
+    );
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: "#eaeaea"
-  },
-  title: {
-    marginTop: 16,
-    paddingVertical: 8,
-    borderWidth: 4,
-    borderColor: "#20232a",
-    borderRadius: 6,
-    backgroundColor: "#61dafb",
-    color: "#20232a",
-    textAlign: "center",
-    fontSize: 30,
-    fontWeight: "bold"
-  }
-});
+export default HomepageDefaultPage;
