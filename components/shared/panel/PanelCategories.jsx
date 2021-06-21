@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
 import Link from 'next/link';
-import categories from '../../../assets/src/data/static-categories.json';
+import categories from '../../../assets/static/data/static-categories.json';
 
 const { SubMenu } = Menu;
 

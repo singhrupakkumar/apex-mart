@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
-import menuData from '~/public/static/data/menu';
+import menuData from '~/assets/static/data/menu';
 
 import SearchHeader from '~/components/shared/headers/modules/SearchHeader';
 import ElectronicHeaderActions from '~/components/shared/headers/modules/ElectronicHeaderActions';

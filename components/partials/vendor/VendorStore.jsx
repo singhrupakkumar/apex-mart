@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import { relatedProduct } from '../../../assets/src/data/product';
+import { relatedProduct } from '../../../assets/static/data/product';
 import Product from '../../elements/products/Product';
 import VendorProducts from './modules/VendorProducts';
 import NextArrow from '../../elements/carousel/NextArrow';

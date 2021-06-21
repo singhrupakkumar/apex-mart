@@ -11,7 +11,7 @@ import {
     electronicCollection,
     kitchenCollection,
     categories,
-} from '~/assets/src/data/shopCategories';
+} from '~/assets/static/data/shopCategories';
 
 const ShopCategoriesPage = () => {
 

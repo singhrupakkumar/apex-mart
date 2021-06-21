@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notification } from 'antd';
 import Menu from '../../elements/menu/Menu';
 
-import menuData from '../../../assets/src/data/menu';
+import menuData from '../../../assets/static/data/menu';
 import CurrencyDropdown from '../headers/modules/CurrencyDropdown';
 import LanguageSwicher from '../headers/modules/LanguageSwicher';
 import MenuCategoriesDropdown from '~/components/shared/menus/MenuCategoriesDropdown';

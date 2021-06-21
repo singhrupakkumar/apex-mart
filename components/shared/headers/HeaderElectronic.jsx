@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import Link from 'next/link';
-import menuData from '~/assets/src/data/menu';
+import menuData from '~/assets/static/data/menu';
 import CurrencyDropdown from '~/components/shared/headers/modules/CurrencyDropdown';
 import LanguageSwicher from '~/components/shared/headers/modules/LanguageSwicher';
 import SearchHeader from '~/components/shared/headers/modules/SearchHeader';
