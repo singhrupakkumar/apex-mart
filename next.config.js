@@ -14,6 +14,9 @@ const nextSettings = {
         title: 'Apex Mart',
         titleDescription: 'Home',
     },
+    optimization: {
+      minimize: true,  
+   },
 };
 
 module.exports = withPlugins([withImages(), nextSettings]);
