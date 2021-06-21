@@ -1,7 +1,7 @@
 import { all, put, takeLatest, takeEvery } from 'redux-saga/effects';
 import { polyfill } from 'es6-promise';
 
-import blogGrid from '../../public/static/data/blog-grid';
+import blogGrid from '../../assets/src/data/blog-grid';
 
 import {
     actionTypes,

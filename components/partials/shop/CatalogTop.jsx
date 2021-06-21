@@ -1,5 +1,5 @@
 import React from 'react';
-import { shop_categories_catalog, categories } from '../../../public/static/data/shopCategories';
+import { shop_categories_catalog, categories } from '../../../assets/src/data/shopCategories';
 import Link from 'next/link';
 
 const CatalogTop = () => (

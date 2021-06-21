@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ProductWide from '../../../elements/products/ProductWide';
 import Product from '../../../elements/products/Product';
-import { relatedProduct } from '../../../../public/static/data/product';
+import { relatedProduct } from '../../../../assets/src/data/product';
 import ProductOffline from '../../../elements/products/ProductOffline';
 
 class VendorProducts extends Component {

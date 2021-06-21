@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { Menu } from 'antd';
-import { menuPrimary } from '../../../public/static/data/menu';
+import { menuPrimary } from '../../../assets/src/data/menu';
 import Link from 'next/link';
 
 const { SubMenu } = Menu;

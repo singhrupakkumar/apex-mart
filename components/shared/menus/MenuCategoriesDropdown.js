@@ -1,5 +1,5 @@
 import React from 'react';
-import menuData from '~/public/static/data/menu.json';
+import menuData from '~/assets/src/data/menu.json';
 import Menu from '~/components/elements/menu/Menu';
 
 const MenuCategoriesDropdown = () => {
