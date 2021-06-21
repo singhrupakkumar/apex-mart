@@ -16,7 +16,7 @@ const nextSettings = {
     },
     optimization: {
     minimizer: [
-      // we specify a custom UglifyJsPlugin here to get source maps in production
+      //sone change for opti we specify a custom UglifyJsPlugin here to get source maps in production
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
