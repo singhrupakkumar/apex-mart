@@ -8,27 +8,30 @@
 * */
 const withPlugins = require('next-compose-plugins');
 const withImages = require('next-images');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
 const nextSettings = {
     env: {
         title: 'Apex Mart',
         titleDescription: 'Home',
     },
-    optimization: {
-    minimizer: [
-      //sone change for opti we specify a custom UglifyJsPlugin here to get source maps in production
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        uglifyOptions: {
-          compress: false,
-          ecma: 6,
-          mangle: true
-        },
-        sourceMap: true
-      })
-    ]
+
+    module: {
+	    rules: [
+	      {
+	        test: /.s?css$/,
+	        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+	      },
+	    ],
   },
+  optimization: {
+    minimizer: [
+      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+      // `...`,
+      new CssMinimizerPlugin(),
+    ],
+  },     
 };
 
 module.exports = withPlugins([withImages(), nextSettings]);
